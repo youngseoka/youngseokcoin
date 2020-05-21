@@ -121,7 +121,7 @@ public:
         genesis = CreateGenesisBlock(1590041714, 2705151972, 0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("00000000e070257f1671c046159d504af1cfd9bf04b2138e80e381901e2f815f"));
-        assert(genesis.hashMerkleRoot == uint256S("0x35d9f2d1009d1ceed83b8d603b3d4bd0a8cae865985100b1b497b21f6f2e8178"));
+        assert(genesis.hashMerkleRoot == uint256S("0x78812e6f1fb297b4b100519865e8caa8d04b3d3b608d3bd8ee1c9d00d1f2d935"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         /*vSeeds.emplace_back("seed.youngseokcoin.sipa.be", true); // Pieter Wuille, only supports x1, x5, x9, and xd
@@ -220,7 +220,7 @@ public:
         genesis = CreateGenesisBlock(1590041714, 2705151972, 0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("00000000e070257f1671c046159d504af1cfd9bf04b2138e80e381901e2f815f"));
-        assert(genesis.hashMerkleRoot == uint256S("0x35d9f2d1009d1ceed83b8d603b3d4bd0a8cae865985100b1b497b21f6f2e8178"));
+        assert(genesis.hashMerkleRoot == uint256S("0x78812e6f1fb297b4b100519865e8caa8d04b3d3b608d3bd8ee1c9d00d1f2d935"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -303,7 +303,7 @@ public:
         genesis = CreateGenesisBlock(1590041714, 2705151972, 0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("00000000e070257f1671c046159d504af1cfd9bf04b2138e80e381901e2f815f"));
-        assert(genesis.hashMerkleRoot == uint256S("0x35d9f2d1009d1ceed83b8d603b3d4bd0a8cae865985100b1b497b21f6f2e8178"));
+        assert(genesis.hashMerkleRoot == uint256S("0x78812e6f1fb297b4b100519865e8caa8d04b3d3b608d3bd8ee1c9d00d1f2d935"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
