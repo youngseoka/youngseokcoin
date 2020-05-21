@@ -76,7 +76,7 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 210000;
         consensus.BIP34Height = 1;
-        consensus.BIP34Hash = uint256S("");
+        consensus.BIP34Hash = uint256S("00000000e070257f1671c046159d504af1cfd9bf04b2138e80e381901e2f815f");
         consensus.BIP65Height = 0; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP66Height = 0; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
@@ -118,10 +118,10 @@ public:
         nDefaultPort = 8487;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1590041714, 2705151972, 0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"));
-        assert(genesis.hashMerkleRoot == uint256S("0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"));
+        assert(consensus.hashGenesisBlock == uint256S("00000000e070257f1671c046159d504af1cfd9bf04b2138e80e381901e2f815f"));
+        assert(genesis.hashMerkleRoot == uint256S("0x35d9f2d1009d1ceed83b8d603b3d4bd0a8cae865985100b1b497b21f6f2e8178"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         /*vSeeds.emplace_back("seed.youngseokcoin.sipa.be", true); // Pieter Wuille, only supports x1, x5, x9, and xd
@@ -163,7 +163,7 @@ public:
 
         chainTxData = ChainTxData{
             // Data as of block 000000000000000000d97e53664d17967bd4ee50b23abb92e54a34eb222d15ae (height 478913).
-            1589992862, // * UNIX timestamp of last known number of transactions
+            1590041714, // * UNIX timestamp of last known number of transactions
             1,  // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             1         // * estimated number of transactions per second after that timestamp
@@ -217,10 +217,10 @@ public:
         nDefaultPort = 18487;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1296688602, 414098458, 0x1d00ffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1590041714, 2705151972, 0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943"));
-        assert(genesis.hashMerkleRoot == uint256S("0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"));
+        assert(consensus.hashGenesisBlock == uint256S("00000000e070257f1671c046159d504af1cfd9bf04b2138e80e381901e2f815f"));
+        assert(genesis.hashMerkleRoot == uint256S("0x35d9f2d1009d1ceed83b8d603b3d4bd0a8cae865985100b1b497b21f6f2e8178"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -250,7 +250,7 @@ public:
 
         chainTxData = ChainTxData{
             // Data as of block 00000000000001c200b9790dc637d3bb141fe77d155b966ed775b17e109f7c6c (height 1156179)
-            1589992862,
+            1590041714,
             1,
             1
         };
@@ -300,10 +300,10 @@ public:
         nDefaultPort = 18444;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1296688602, 2, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1590041714, 2705151972, 0x1d00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206"));
-        assert(genesis.hashMerkleRoot == uint256S("0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"));
+        assert(consensus.hashGenesisBlock == uint256S("00000000e070257f1671c046159d504af1cfd9bf04b2138e80e381901e2f815f"));
+        assert(genesis.hashMerkleRoot == uint256S("0x35d9f2d1009d1ceed83b8d603b3d4bd0a8cae865985100b1b497b21f6f2e8178"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
